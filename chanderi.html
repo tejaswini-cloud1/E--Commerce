@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tassar Saree's</title>
+    <!-- <---google fonts link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Dancing+Script:wght@400..700&family=Ga+Maamli&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Rubik+Wet+Paint&display=swap"
+        rel="stylesheet">
+
+    <style>
+        h1 {
+            font-family: "Ga Maamli", sans-serif;
+            font-weight: 500;
+            margin-left: 450px;
+            font-size: 50px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .gallery .tsaree {
+            height: 300px;
+            width: 400px;
+            /* border: 2px solid black; */
+            box-shadow: 4px 7px 7px 0 rgb(55, 55, 55);
+            border-radius: 13px;
+            cursor: pointer;
+            margin: 15px;
+            transition: 400ms;
+            
+        }
+
+        .gallery .tsaree:hover {
+            filter: hue-rotate(1);
+            transform: scaleY(1.05);
+            box-shadow: 5px 5px 9px 9px rgb(79, 78, 78);
+        }
+        @media only screen and (min-width: 320px) and (max-width:419px){
+            h1 {
+            font-family: "Ga Maamli", sans-serif;
+            font-weight: 100;
+            font-size: 40px;
+            margin-left: 50px;
+            color: cornflowerblue;
+            cursor: pointer;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            cursor: pointer;
+        }
+
+        .gallery .tsaree {
+            height: 300px;
+            width: 300px;
+            /* border: 2px solid black; */
+            box-shadow: 4px 7px 7px 0 rgb(55, 55, 55);
+            border-radius: 13px;
+            cursor: pointer;
+            margin: 15px;
+            transition: 400ms;
+        }
+
+        .gallery .tsaree:hover {
+            filter: hue-rotate(1);
+            transform: scaleY(1.05);
+            box-shadow: 5px 5px 9px 9px rgb(79, 78, 78);
+            cursor: pointer;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Chanderi & Bishnupuri Saree's Collection</h1>
+    <div class="gallery">
+        <img src="./assets/chanderi silks-2500.png"
+            alt="" class="tsaree">
+        <img src="./assets/chendari silks-2500.png"
+            alt="" class="tsaree">
+        <img src="./assets/chndri.png"
+            alt="" class="tsaree">
+        <img src="./assets/chndrii.png"
+            alt="" class="tsaree">
+        <img src="./assets/bishnupuri silks-4800.png"
+            alt="" class="tsaree">
+        <img src="./assets/bishnupuri silks-5800.png"
+            alt="" class="tsaree">
+    </div>
+  
+</body>
+
+</html>

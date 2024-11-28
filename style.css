@@ -1,0 +1,330 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background-color: #4a4e69; /* Dark color */
+    padding: 15px 20px;
+}
+
+.logo {
+    color: #f9f7f7; /* Light color for contrast */
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative; /* Needed for dropdown */
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f9f7f7; /* Light color for links */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: "Playwrite DE Grund", cursive;
+    cursor: pointer;
+}
+
+.nav-links a:hover {
+    background-color: #22223b; /* Darker color for hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4a4e69;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-content a {
+    padding: 5px 16px;
+    color: #f9f7f7;
+}
+
+.dropdown-content a:hover {
+    background-color: #22223b; /* Darker color for dropdown hover */
+}
+
+.cart {
+    margin-left: auto; /* Push the cart to the right */
+    cursor: pointer;
+}
+
+.cart a {
+    text-decoration: none;
+    color: #f9f7f7;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 4px;
+    width: 25px;
+    background-color: #f9f7f7;
+    margin: 3px 0;
+    cursor: pointer;
+}
+.secondnav{
+    height: 100px;
+    width: 99.7%;
+    box-shadow: 2px 2px 2px 2px rgb(114, 111, 111);
+    cursor: pointer;
+    background: linear-gradient(rgb(169, 169, 235),rgb(230, 183, 191), white,rgb(170, 235, 170));
+    
+}
+
+.img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 120px;
+    cursor: pointer;
+}
+.footer{
+    height: 100px;
+    width: 100%;
+    background: rgb(3, 42, 46);
+}
+.wbm{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 20%;
+    background-color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    font-family:cursive;
+    margin-left: 100px;
+    
+    
+}
+.copyrights{
+    color: rgb(233, 227, 227);
+    font-size: 20px;
+    margin-top: -10px;
+    margin-right: auto;
+}
+.icons{
+    /* position: absolute;
+    top: 10px; */
+    margin-top: -65px;
+    margin-left: 600px;
+    font-size: 50px;
+    color: white;
+}
+.dots{
+    margin-top: -25px;
+    color: white;
+    font-size: 30px;
+    margin-left: 650px;
+
+}
+
+/* <----responsiveness--> */
+@media only screen and (min-width: 320px) and (max-width: 420px){
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    display: inline-block;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+    background-color: #4a4e69; /* Dark color */
+    padding: 15px 20px;
+    height: 100px;
+}
+
+.logo {
+    color: #f9f7f7; /* Light color for contrast */
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: "Outfit", sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative; /* Needed for dropdown */
+    margin-left: 30px;
+}
+
+.nav-links a {
+    
+    text-decoration: none;
+    color: #f9f7f7; /* Light color for links */
+    padding: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Playwrite DE Grund", cursive;
+    margin-left: -10px;
+    font-size: 15px;
+
+}
+
+.nav-links a:hover {
+    background-color: #22223b; /* Darker color for hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4a4e69;
+    min-width: 160px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 5px 16px;
+    color: #f9f7f7;
+    cursor: pointer;
+}
+
+.dropdown-content a:hover {
+    background-color: #22223b; /* Darker color for dropdown hover */
+}
+
+.cart {
+    margin-left: auto; /* Push the cart to the right */
+    cursor: pointer;
+}
+
+.cart a {
+    text-decoration: none;
+    color: #f9f7f7;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 4px;
+    width: 25px;
+    background-color: #f9f7f7;
+    cursor: pointer;
+    margin: 3px 0;
+}
+.secondnav{
+    height: 100px;
+    width: 99.7%;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgb(114, 111, 111);
+    background: linear-gradient(rgb(169, 169, 235),rgb(230, 183, 191), white,rgb(170, 235, 170));
+
+    
+}
+
+.img{
+    height: 100px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 120px;
+}
+
+}
+/* <----backgrnd img> */
+.d-block {
+    height: 600px;
+    cursor: pointer;
+}
+/* <----footter----> */
+.footer{
+    height: 140px;
+    width: 100%;
+    background: rgb(3, 42, 46);
+}
+.wbm{
+    height: 60px;
+    width: 60px;
+    border: 1px solid black;
+    border-radius: 20%;
+    background-color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    font-family:cursive;
+    margin-left: 40px; 
+}
+.copyrights{
+    color: rgb(233, 227, 227);
+    font-size: 14px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.icons{
+    /* position: absolute; */
+    top: 10px;
+    margin-top: -120px;
+    margin-left: 150px;
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+}
+.dots{
+    margin-top: -15px;
+    color: white;
+    font-size: 30px;
+    margin-left: 190px;
+
+}
+

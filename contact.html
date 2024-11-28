@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url(https://images.pexels.com/photos/6331082/pexels-photo-6331082.jpeg?auto=compress&cs=tinysrgb&w=600);
+            background-size: cover;
+            max-width: 1300px;
+            /* height: 100vh; */
+        }
+
+        .contact-form-container {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 150px;
+            margin-left: 500px;
+            background-color: transparent;
+            padding: 20px;
+            box-shadow: 5px, 8px, 8px, 5px rgb(125, 124, 124);
+            border-radius: 8px;
+            border: 2px solid black;
+        }
+       
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+
+        /* Media Queries for responsiveness */
+      @media only screen and (min-width:320px) and (max-width:419px){
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background-image: url(https://images.pexels.com/photos/6331082/pexels-photo-6331082.jpeg?auto=compress&cs=tinysrgb&w=600);
+            background-size: cover;
+            max-width: 1300px;
+            height: 100vh;
+        }
+
+        .contact-form-container {
+            /* width: 90%; */
+            width: 330px;
+            margin-top: 150px;
+            margin-left: 0px;
+            background-color: transparent;
+            padding: 20px;
+            box-shadow: 5px, 8px, 8px, 5px rgb(125, 124, 124);
+            border-radius: 8px;
+            border: 2px solid black;
+        }
+       
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+      }
+
+     
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="contact-form-container">
+            <h2>Contact Us</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+   
+    </body>
+
+</html>
